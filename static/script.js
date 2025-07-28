@@ -21,7 +21,7 @@ document.getElementById('recommendation-form').addEventListener('submit', functi
     }
 
     // The base URL of your Flask API
-    const apiUrl = `http://127.0.0.1:5000/recommend?${queryParams.join('&')}`;
+    const apiUrl = `/recommend?${queryParams.join('&')}`;
 
     // Clear previous results and show a loading message
     resultsContainer.innerHTML = '<p>Fetching recommendations...</p>';
